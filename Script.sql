@@ -47,7 +47,7 @@ INSERT INTO artist (id_artist, artist_name)
 VALUES (1, 'Muse'), (2, 'Papa Roach'), (3, 'Nina Simone'), (4, 'Tony Bennet'), (5, 'Marvin Brooks'), (6, 'Betty Bibbs'), (7,'Mozart'), (8, 'Bach'), (9, 'Jimmy Dawkins'), (10, 'Lafayette Leake');
 
 INSERT INTO categoryartist (id_category, id_artist)
-VALUES (1,1),(1,2),(2,3),(2,4),(3,5),(3,6),(4,7),(4,8),(5,9),(5,10);
+VALUES (1,1),(1,2),(2,3),(2,4),(3,5),(3,6),(4,7),(4,8),(5,9),(5,10),(2,1);
 
 INSERT INTO albumn (id_albumn, name_albumn, age)
 VALUES (1, 'Первый', 2018), (2, 'Второй', 2002), (3, 'Третий', 2003), (4, 'Четвертый', 2018), (5, 'Пятый', 2005), (6, 'Шестой', 2006), (7, 'Седьмой', 2007), (8, 'Восьмой', 2008);
@@ -65,3 +65,4 @@ VALUES (1, 'list1', 2018, 1), (2, 'list2', 2012, 2), (3,'list3', 2013, 3), (4, '
 INSERT INTO TrackPlaylist (id_track, id_playlist)
 VALUES (1,1), (3,2), (4,3), (5,4), (6,5), (7,6), (8,7), (9,8), (10, 7), (11, 7), (12, 8), (13, 5), (14, 6), (15,1), (16, 6);
 
+update track set id_albumn = 2 where id_track = 2
